@@ -47,3 +47,6 @@ colnames(alldata) <- colnamelist
 
 #Step 5: Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 datatotidy <- alldata[, colnames(alldata) !="activityName"]
+tidydata <- aggregate(datatotidy[, 3:68], by = list(subjectID = datatotidy$subjectID, activityID = datatotidy$activityID), mean)
+tidydata <- merge(tidydata, actlabels, all.x = TRUE)
+write.table(tidydata, "tidytable.txt", row.names = FALSE, quote = FALSE)
