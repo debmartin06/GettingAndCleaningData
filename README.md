@@ -8,8 +8,13 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 Unzip the files once downloaded, and make sure the folder they were downloaded to is set as your working directory in R.
 
 The script is named run_analysis.R, and there are comments interspersed throughout the script to explain what is happening each step of the way, but here is a brief synopsis of what it's doing:
+
 1. Merges the training and test sets into one data set.
+
 2. Extracts the mean and standard deviation measurements for each variable.
+
 3. Assigns descriptive activity names to the data set.
+
 4. Labels the data set with descriptive variable names.
+
 5. Creates a second, tidy data set that takes the average of each variable, grouped by subject ID and activity ID.
