@@ -18,3 +18,5 @@ The script is named run_analysis.R, and there are comments interspersed througho
 4. Labels the data set with descriptive variable names.
 
 5. Creates a second, tidy data set that takes the average of each variable, grouped by subject ID and activity ID.
+
+I also included a txt file containing the tide form of the data, named 'tidytable.txt'.
